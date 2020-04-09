@@ -1,4 +1,5 @@
 package lesson19;
+
 import java.util.Random;
 /**
  The Person class models infected people in a 2d grid
@@ -6,7 +7,7 @@ import java.util.Random;
  and an infection status.
  The could be normal, infected, exposed, or recovered.
 
- Each person has an individual probablity of being infected when coming in contact with an infected person
+ Each person has an individual probability of being infected when coming in contact with an infected person
  and they have an individual recovery time after they are infected, at which point they are no longer infectious.
  They can move one unit horizontally, vertically, or diagonally in the grid.
 
@@ -15,7 +16,7 @@ import java.util.Random;
 
 */
 
-public class Person {
+public abstract class Person {
   // the persons fate depends on some random variables...
   private Random random = new Random();
 

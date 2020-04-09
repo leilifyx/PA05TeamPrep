@@ -1,9 +1,10 @@
 package lesson19;
+//package lesson19;
 
 import java.util.Random;
 /**
  *  
- * @author tim
+ * @author 
  *
  */
 

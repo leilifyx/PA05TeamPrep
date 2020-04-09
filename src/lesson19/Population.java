@@ -1,4 +1,5 @@
 package lesson19;
+//package lesson19;
 
 import java.util.Random;
 
@@ -23,7 +24,7 @@ public class Population{
 
   public void createPeople(){
     for(int i=0; i<this.people.length; i++){
-      this.addPerson(new Person());
+      this.addPerson(new StayAtHomeIfSick()); //changed from new Person
     }
   }
 

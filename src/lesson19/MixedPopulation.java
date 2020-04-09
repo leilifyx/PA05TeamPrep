@@ -1,5 +1,6 @@
 package lesson19;
 
+
 public class MixedPopulation extends Population{
   int numShelterInPlace;
   int numEssential;
@@ -20,8 +21,9 @@ public class MixedPopulation extends Population{
     for(int i=0; i<this.numEssential; i++){
       this.addPerson(new StayAtHomeIfSick());
     }
+    /*
     for(int i=0; i<this.numOthers; i++){
       this.addPerson(new Person());
-    }
+    }*/
   }
 }

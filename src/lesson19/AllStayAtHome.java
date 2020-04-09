@@ -1,5 +1,6 @@
 package lesson19;
 
+//package lesson19;
 public class AllStayAtHome extends Population{
 
   public AllStayAtHome(int n){
