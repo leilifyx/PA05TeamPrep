@@ -1,7 +1,6 @@
 package lesson19;
-//package lesson19;
 
-import java.util.Random;
+
 /**
  *  
  * @author 
@@ -12,7 +11,6 @@ public class RunSimulation {
 	// the maximum number of days the simulation will run
 	private static int MAX_TICKS=1000;
 
-	private Random random = new Random();
 
 	public static void main(String[] args) {
 		// first we get the simulation parameters

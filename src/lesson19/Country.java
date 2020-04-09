@@ -87,6 +87,18 @@ public class Country {
 					+" recovered:"+this.numRecovered);
 
 	}
+	
+	public int getNumInfected(){
+		return numInfected;
+	}
+	
+	public int getNumRecovered(){
+		return numRecovered;
+	}
+	
+	public int getNumPeople(){
+		return numPeople;
+	}
 
 	public void printCountry() {
 
