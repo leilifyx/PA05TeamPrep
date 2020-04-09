@@ -92,12 +92,10 @@ public abstract class Person {
 
 	}
 
-  void tryToMove(){
-		tryToMoveRandomly();
-	}
+  abstract void tryToMove();
   /**
 	   try to move one step in a random direction.
-		 if they way is blocked then don't move.
+		 if the way is blocked then don't move.
 	*/
   void tryToMoveRandomly(){
     int dx = random.nextInt(3)-1; // -1,0,1
