@@ -1,10 +1,12 @@
 package lesson19;
+import java.util.Random;
 
 
 public class MixedPopulation extends Population{
   int numShelterInPlace;
   int numEssential;
   int numOthers;
+  Random random= new Random();
 
   public MixedPopulation(int numShelterInPlace, int numEssential, int numOthers){
     super(numShelterInPlace + numEssential + numOthers);
@@ -23,7 +25,14 @@ public class MixedPopulation extends Population{
     }
     
     for(int i=0; i<this.numOthers; i++){
-      this.addPerson(new Skeptic()); //added new Skeptic
+      int chooseOther= random.nextInt(3); //0,1,2
+      if(chooseOther==0){
+    	  this.addPerson(new Skeptic());} 
+      else if(chooseOther==1){
+    	  this.addPerson(new FrequentFlier());}
+      else{
+    	  this.addPerson(new LowImmunityPerson());}
+      
     }
   }
 }
