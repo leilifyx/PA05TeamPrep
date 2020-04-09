@@ -23,6 +23,7 @@ public class RunSimulation {
 		int numStayHome = Integer.parseInt(args[2]);
 		int numEssential = Integer.parseInt(args[3]);
 		int numSkeptic = Integer.parseInt(args[4]);
+		
 
 		// next we create the population and the country
 		Population population;
